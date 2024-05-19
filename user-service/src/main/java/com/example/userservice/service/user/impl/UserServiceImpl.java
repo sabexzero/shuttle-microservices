@@ -1,6 +1,6 @@
 package com.example.userservice.service.user.impl;
 
-import com.example.hibye.validation.defects.UserDefects;
+import com.example.userservice.validation.defects.UserDefects;
 import com.example.userservice.repository.UserRepository;
 import com.example.userservice.service.user.UserService;
 import com.example.userservice.validation.Validator;
