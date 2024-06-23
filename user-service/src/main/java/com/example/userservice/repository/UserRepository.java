@@ -1,7 +1,7 @@
 package com.example.userservice.repository;
 
-import com.example.userservice.domain.User;
+import com.example.userservice.domain.AppUser;
 import org.springframework.data.repository.CrudRepository;
 
-public interface UserRepository extends CrudRepository<User, Long> {
+public interface UserRepository extends CrudRepository<AppUser, Long> {
 }
