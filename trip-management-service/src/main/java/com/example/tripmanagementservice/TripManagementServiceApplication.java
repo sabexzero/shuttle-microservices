@@ -5,9 +5,9 @@ import org.springframework.boot.autoconfigure.SpringBootApplication;
 
 @SpringBootApplication
 public class TripManagementServiceApplication {
-    
-    public static void main(String[] args) {
-        SpringApplication.run(TripManagementServiceApplication.class, args);
-    }
-    
+
+	public static void main(String[] args) {
+		SpringApplication.run(TripManagementServiceApplication.class, args);
+	}
+
 }

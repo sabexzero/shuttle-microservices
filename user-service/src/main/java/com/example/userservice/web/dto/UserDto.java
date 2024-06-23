@@ -1,6 +1,6 @@
 package com.example.userservice.web.dto;
 
-import com.example.userservice.domain.User;
+import com.example.userservice.domain.AppUser;
 
 public record UserDto(
     Long id,
@@ -8,8 +8,8 @@ public record UserDto(
     String surname,
     Integer age
 ) {
-    public User toDomain(){
-        return new User(
+    public AppUser toDomain(){
+        return new AppUser(
                 id,
                 name,
                 surname,

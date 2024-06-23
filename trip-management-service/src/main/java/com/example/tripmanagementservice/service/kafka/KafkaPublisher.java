@@ -1,12 +1,12 @@
-package com.example.userservice.service.kafka;
+package com.example.tripmanagementservice.service.kafka;
 
 import lombok.RequiredArgsConstructor;
 import org.apache.kafka.clients.admin.NewTopic;
 import org.springframework.kafka.core.KafkaTemplate;
 import org.springframework.stereotype.Service;
 
-@Service
 @RequiredArgsConstructor
+@Service
 public class KafkaPublisher {
     private final KafkaTemplate<String, String> kafkaTemplate;
     
