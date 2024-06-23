@@ -1,6 +1,6 @@
-package com.example.userservice.configuration;
+package com.example.tripmanagementservice.configuration;
 
-import com.fasterxml.jackson.databind.ser.std.StringSerializer;
+import org.apache.kafka.common.serialization.StringSerializer;
 import org.apache.kafka.clients.admin.NewTopic;
 import org.apache.kafka.clients.producer.ProducerConfig;
 import org.springframework.beans.factory.annotation.Value;
@@ -16,7 +16,7 @@ import java.util.Map;
 @Configuration
 public class KafkaConfiguration {
     
-    @Value("${kafka.bootstrap-servers}")
+    @Value("${spring.kafka.bootstrap-servers}")
     private String bootstrapServers;
     
     @Bean
@@ -36,5 +36,10 @@ public class KafkaConfiguration {
     @Bean
     public NewTopic newTopic(){
         return new NewTopic("testKafka", 1, (short) 1);
+    }
+
+    @Bean
+    public NewTopic newTopic2(){
+        return new NewTopic("testKafka2", 1, (short) 1);
     }
 }

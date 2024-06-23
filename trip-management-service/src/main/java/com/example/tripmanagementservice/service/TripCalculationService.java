@@ -1,2 +1,5 @@
-package com.example.tripmanagementservice.service;public class TripCalculationService {
+package com.example.tripmanagementservice.service;
+
+public interface TripCalculationService {
+
 }

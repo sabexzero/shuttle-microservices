@@ -11,11 +11,12 @@ import org.springframework.stereotype.Service;
 @RequiredArgsConstructor
 public class KafkaConsumer {
     private final KafkaPublisher kafkaPublisher;
-    private final NewTopic newTopic;
+    private final NewTopic newTopic2;
 
     @KafkaListener(topics = "testKafka", groupId = "myGroup")
     public void listen(String message) {
         log.info(message);
-        kafkaPublisher.publish("hui", newTopic);
+        String newMessage = message + " hui";
+        kafkaPublisher.publish(newMessage, newTopic2);
     }
 }

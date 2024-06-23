@@ -1,2 +1,4 @@
-package com.example.tripmanagementservice.service;public class PathFindingService {
+package com.example.tripmanagementservice.service;
+
+public class PathFindingService {
 }
