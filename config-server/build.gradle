@@ -23,8 +23,8 @@ repositories {
 
 dependencies {
     implementation 'org.springframework.boot:spring-boot-starter-web'
-    implementation group: 'org.apache.kafka', name: 'kafka_2.13', version: '3.7.0'
-    implementation group: 'org.springframework.kafka', name: 'spring-kafka', version: '3.1.4'
+    implementation group: 'org.springframework.cloud', name: 'spring-cloud-config-server', version: '4.1.1'
+    implementation group: 'org.springframework.boot', name: 'spring-boot-starter-actuator', version: '3.2.5'
     compileOnly 'org.projectlombok:lombok'
     annotationProcessor 'org.projectlombok:lombok'
     testImplementation 'org.springframework.boot:spring-boot-starter-test'
