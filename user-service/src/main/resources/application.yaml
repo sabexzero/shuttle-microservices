@@ -1,0 +1,15 @@
+spring:
+  config:
+    #Need to use env file in properties
+    import: optional:file:.env[.properties]
+  application:
+    name: user-service
+  cloud:
+    config:
+      uri: http://localhost:8000
+  kafka:
+    bootstrap-servers: localhost:9092
+  datasource:
+    url: ${DATABASE_URL}
+    username: ${POSTGRES_USER}
+    password: ${POSTGRES_PASSWORD}
