@@ -1,22 +1,8 @@
 spring:
+  config:
+    import: 'optional:configserver:'
   application:
     name: trip-management-service
-  config:
-    #Need to use env file in properties
-    import: optional:file:.env[.properties]
   cloud:
     config:
-      enabled: false
-  kafka:
-    bootstrap-servers: localhost:9092
-  jpa:
-    properties:
-      hibernate:
-        dialect: org.hibernate.dialect.PostgreSQLDialect
-  datasource:
-    url: ${DATABASE_URL}
-    username: ${POSTGRES_USER}
-    password: ${POSTGRES_PASSWORD}
-
-server:
-  port: 8082
+      uri: http://localhost:8000
