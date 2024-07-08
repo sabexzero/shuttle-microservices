@@ -1,8 +1,8 @@
 package org.example.feedbackservice.service.user;
 
 import com.fasterxml.jackson.core.JsonProcessingException;
-import org.example.feedbackservice.service.kafka.messages.PilotFeedbackMessage;
 import org.example.feedbackservice.web.requests.UserFeedbackRequest;
+import org.shuttle.messages.PilotFeedbackMessage;
 
 public interface UserRatingService {
     void handleUserFeedbackRequest(UserFeedbackRequest request) throws JsonProcessingException;

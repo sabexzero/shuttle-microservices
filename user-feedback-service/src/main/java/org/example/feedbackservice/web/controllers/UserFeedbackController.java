@@ -1,5 +1,6 @@
 package org.example.feedbackservice.web.controllers;
 
+/*import org.example.feedbackservice.service.user.UserRatingService;*/
 import lombok.RequiredArgsConstructor;
 import org.example.feedbackservice.service.user.UserRatingService;
 import org.example.feedbackservice.web.requests.UserFeedbackRequest;

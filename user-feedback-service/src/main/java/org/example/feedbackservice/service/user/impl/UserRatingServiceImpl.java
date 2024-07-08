@@ -5,14 +5,13 @@ import lombok.RequiredArgsConstructor;
 import org.apache.kafka.clients.admin.NewTopic;
 import org.example.feedbackservice.domain.UserRating;
 import org.example.feedbackservice.service.kafka.KafkaPublisher;
-import org.example.feedbackservice.service.kafka.messages.PilotFeedbackMessage;
-import org.example.feedbackservice.service.kafka.messages.UserFeedbackMessage;
-import org.example.feedbackservice.utils.json.JsonUtils;
 import org.example.feedbackservice.web.requests.UserFeedbackRequest;
 import org.example.feedbackservice.repository.UserFeedbackRequestRepository;
 import org.example.feedbackservice.repository.UserRatingRepository;
 import org.example.feedbackservice.service.user.UserRatingService;
 import org.example.feedbackservice.utils.RatingUtils;
+import org.shuttle.messages.PilotFeedbackMessage;
+import org.shuttle.messages.UserFeedbackMessage;
 import org.springframework.stereotype.Service;
 
 @Service
@@ -29,13 +28,11 @@ public class UserRatingServiceImpl implements UserRatingService {
             throws JsonProcessingException {
         int ratingChange = RatingUtils.getRatingChange(request.getPilotRate());
         kafkaPublisher.publish(
-                JsonUtils.writeJson(
-                        UserFeedbackMessage.builder()
-                                .pilotId(request.getPilotId())
-                                .pilotRate(ratingChange)
-                                .build()
-                ),
-                pilotFeedbackTopic
+                UserFeedbackMessage.builder()
+                    .pilotId(request.getPilotId())
+                    .pilotRate(ratingChange)
+                    .build(),
+                "pilot-rating-changer-topic"
         );
         feedbackRequestRepository.save(request);
     }
