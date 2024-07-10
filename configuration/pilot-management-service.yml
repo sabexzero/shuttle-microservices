@@ -6,9 +6,9 @@ spring:
       hibernate:
         dialect: org.hibernate.dialect.PostgreSQLDialect
   datasource:
-    url: jdbc:postgresql://localhost:5432/user_feedback_service_db
+    url: jdbc:postgresql://localhost:5432/pilot_management_service_db
     username: postgres
     password: postgres
 
 server:
-  port: 8085
+  port: 8087
