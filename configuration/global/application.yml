@@ -1,0 +1,6 @@
+spring:
+  config:
+    import:
+      - classpath:application-kafka.yml
+      - classpath:application-opentelemetry.yml
+      - classpath:application-eureka.yml
