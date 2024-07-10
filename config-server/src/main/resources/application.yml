@@ -8,6 +8,6 @@ spring:
           uri: https://github.com/sabexzero/shuttle-microservices
           search-paths:
             - configuration
-            - configuration/general
+            - configuration/global
 server:
   port: 8000
