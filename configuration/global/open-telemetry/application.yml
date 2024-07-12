@@ -3,7 +3,7 @@ spring:
       traces:
         exporter:
           otlp:
-            endpoint: http://localhost:4317
+            endpoint: http://otel-collector:4317
         sampler:
           probability: 1.0
 management:
