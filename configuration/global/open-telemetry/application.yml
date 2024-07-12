@@ -3,7 +3,8 @@ spring:
       traces:
         exporter:
           otlp:
-            endpoint: http://localhost:4317
+            endpoint: http://localhost:4318
+            protocol: http/protobuf
         sampler:
           probability: 1.0
 management:
