@@ -30,6 +30,6 @@ public class OpenTelemetryConfig {
 
     @Bean
     public Tracer tracer(OpenTelemetry openTelemetry) {
-        return openTelemetry.getTracer("your-service-name");
+        return openTelemetry.getTracer("user-feedback-service");
     }
 }

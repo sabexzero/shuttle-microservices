@@ -1,7 +1,16 @@
-opentelemetry:
-  traces:
-    exporter:
-      otlp:
-        endpoint: http://otel-collector:4317
-    sampler:
-      probability: 1.0
+spring:
+    opentelemetry:
+      traces:
+        exporter:
+          otlp:
+            endpoint: http://locahost:4317
+        sampler:
+          probability: 1.0
+management:
+  endpoints:
+    web:
+      exposure:
+        include: health,info,prometheus
+  endpoint:
+    prometheus:
+      enabled: true
