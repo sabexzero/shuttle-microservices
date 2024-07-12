@@ -4,8 +4,8 @@ global:
 scrape_configs:
   - job_name: 'otel-collector'
     static_configs:
-      - targets: ['otel-collector:8888']
+      - targets: ['localhost:8888']
 
   - job_name: 'kafka'
     static_configs:
-      - targets: ['kafka:9092']  # Добавьте свои метрики Kafka здесь при необходимости
+      - targets: ['localhost:9092']  # Добавьте свои метрики Kafka здесь при необходимости
