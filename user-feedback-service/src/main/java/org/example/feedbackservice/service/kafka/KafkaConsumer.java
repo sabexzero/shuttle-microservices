@@ -3,7 +3,7 @@ package org.example.feedbackservice.service.kafka;
 import lombok.RequiredArgsConstructor;
 import lombok.extern.slf4j.Slf4j;
 import org.example.feedbackservice.service.user.UserRatingService;
-import org.shuttle.messages.PilotFeedbackMessage;
+import org.shuttle.kafka.feedback.PilotFeedbackMessage;
 import org.springframework.kafka.annotation.KafkaListener;
 import org.springframework.stereotype.Service;
 

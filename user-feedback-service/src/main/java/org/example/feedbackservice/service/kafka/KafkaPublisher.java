@@ -1,7 +1,7 @@
 package org.example.feedbackservice.service.kafka;
 
 import lombok.RequiredArgsConstructor;
-import org.shuttle.messages.UserFeedbackMessage;
+import org.shuttle.kafka.feedback.UserFeedbackMessage;
 import org.springframework.kafka.core.KafkaTemplate;
 import org.springframework.stereotype.Service;
 

@@ -10,8 +10,8 @@ import org.example.feedbackservice.repository.UserFeedbackRequestRepository;
 import org.example.feedbackservice.repository.UserRatingRepository;
 import org.example.feedbackservice.service.user.UserRatingService;
 import org.example.feedbackservice.utils.RatingUtils;
-import org.shuttle.messages.PilotFeedbackMessage;
-import org.shuttle.messages.UserFeedbackMessage;
+import org.shuttle.kafka.feedback.PilotFeedbackMessage;
+import org.shuttle.kafka.feedback.UserFeedbackMessage;
 import org.springframework.stereotype.Service;
 
 @Service

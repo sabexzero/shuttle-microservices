@@ -39,5 +39,7 @@ dependencies {
     testImplementation 'org.springframework.boot:spring-boot-starter-test'
     testRuntimeOnly 'org.junit.platform:junit-platform-launcher'
 
-    implementation 'org.shuttle:messages:1.0.1'
+    implementation group: 'io.opentelemetry.instrumentation', name: 'opentelemetry-spring-boot-starter', version: '2.5.0-alpha'
+
+    implementation 'org.shuttle:shared:1.0.1'
 }

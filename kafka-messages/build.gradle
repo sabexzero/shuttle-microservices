@@ -1,0 +1,26 @@
+plugins {
+    id 'java'
+    id 'maven-publish'
+}
+
+group = 'org.shuttle'
+version = '1.0.0'
+
+tasks.register('sourcesJar', Jar) {
+    from sourceSets.main.allSource
+    archiveClassifier.set('sources')
+}
+
+publishing {
+    publications {
+        mavenJava(MavenPublication) {
+            from components.java
+
+            groupId = "org.shuttle"
+            artifactId = "messages"
+            version = "1.0.1"
+
+            artifact(tasks.sourcesJar)  // Добавляем исходный JAR
+        }
+    }
+}

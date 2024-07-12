@@ -1,0 +1,11 @@
+package org.shuttle.classes.user;
+
+public enum Gender {
+    MALE,
+    FEMALE,
+    COMBAT_HELICOPTER_1000,
+    COMBAT_HELICOPTER_2000,
+    COMBAT_HELICOPTER_3000,
+    COMBAT_HELICOPTER_4000,
+    COMBAT_HELICOPTER_5000
+}
