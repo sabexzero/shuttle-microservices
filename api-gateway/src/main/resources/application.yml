@@ -1,0 +1,17 @@
+spring:
+  application:
+    name: api-gateway
+  cloud:
+    gateway:
+      routes:
+        - id: user-feedback-service-route
+          uri: http://localhost:8085
+          predicates:
+            - Host=shuttle.user-feedback.api
+        - id: pilot-feedback-service-route
+          uri: http://localhost:8086
+          predicates:
+            - Host=shuttle.pilot-feedback.api
+server:
+  port: 9000
+  forward-headers-strategy: framework
