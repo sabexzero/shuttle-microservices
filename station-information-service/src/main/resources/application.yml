@@ -1,0 +1,9 @@
+spring:
+  config:
+    import: 'optional:configserver:'
+  application:
+    name: station-information-service
+  cloud:
+    config:
+      uri: http://localhost:8000
+
