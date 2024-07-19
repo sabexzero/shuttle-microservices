@@ -68,7 +68,7 @@ The following list lists the microservices of the project with the status of the
 - Shuttle Information Service (Not implemented)😪
 - Pilot Information Service (Not implemented)😪
 - User Information Service (Not implemented)😪
-- Pilot Rank Service (Not implemented)😪
+- Pilot Rank Service (In progress)🔨
 - Trip Path Finder Service (In progress)🔨
 - Trip Calculation Service (Not implemented)😪
 - Payment Service (Not implemented)😪
