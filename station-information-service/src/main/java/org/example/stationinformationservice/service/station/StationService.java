@@ -6,8 +6,8 @@ import org.shuttle.classes.planet.Planet;
 import java.util.List;
 
 public interface StationService {
-    List<Station> find(Planet planet);
-    Station find(Planet planet, Integer number);
+    List<Station> find(String planet);
+    Station find(String planet, Integer number);
     Station find(Long id);
 
     //Station create();
