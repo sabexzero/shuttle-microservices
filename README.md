@@ -103,10 +103,8 @@ The project uses the following technologies and approaches:
 - **PGSQL, MONGODB, REDIS, CASSANDRA** as databases. 
 - 
 ## Charts and metrics 📊
-### Abbreviations and designations
-![Order](documentation/microservices-abr.svg)
-### Visualization of the taxi ordering process
-![Order](documentation/microservices-make-order.svg)
+### Visualization of the shuttle ordering process
+The diagram previously shown here is now invalid
 
 #### In the future, all documentation, diagrams, calculations of metrics such as DAU, MAU and so on will be implemented as a React application using React Flow, there will be no more such vile diagrams 😥😥😥
 
