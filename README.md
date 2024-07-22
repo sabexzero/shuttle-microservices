@@ -68,7 +68,7 @@ The following list lists the microservices of the project with the status of the
 - Shuttle Information Service (Not implemented)😪
 - Pilot Information Service (Not implemented)😪
 - User Information Service (Not implemented)😪
-- Pilot Rank Service (Not implemented)😪
+- Pilot Rank Service (In progress)🔨
 - Trip Path Finder Service (In progress)🔨
 - Trip Calculation Service (Not implemented)😪
 - Payment Service (Not implemented)😪
@@ -103,10 +103,8 @@ The project uses the following technologies and approaches:
 - **PGSQL, MONGODB, REDIS, CASSANDRA** as databases. 
 - 
 ## Charts and metrics 📊
-### Abbreviations and designations
-![Order](documentation/microservices-abr.svg)
-### Visualization of the taxi ordering process
-![Order](documentation/microservices-make-order.svg)
+### Visualization of the shuttle ordering process
+The diagram previously shown here is now invalid
 
 #### In the future, all documentation, diagrams, calculations of metrics such as DAU, MAU and so on will be implemented as a React application using React Flow, there will be no more such vile diagrams 😥😥😥
 
