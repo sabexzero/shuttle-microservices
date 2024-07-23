@@ -40,7 +40,8 @@ dependencies {
     testRuntimeOnly 'org.junit.platform:junit-platform-launcher'
 
 
-    implementation group: 'io.micrometer', name: 'micrometer-registry-prometheus', version: '1.13.2'
+    implementation 'io.micrometer:micrometer-core'
+    implementation 'io.micrometer:micrometer-registry-prometheus'
     implementation group: 'io.opentelemetry.instrumentation', name: 'opentelemetry-spring-boot-starter', version: '2.5.0-alpha'
 
     implementation 'org.shuttle:shared:1.0.1'

@@ -15,7 +15,7 @@ public class OpenTelemetryConfig {
     @Bean
     public OpenTelemetry openTelemetry() {
         OtlpGrpcSpanExporter spanExporter = OtlpGrpcSpanExporter.builder()
-                .setEndpoint("http://otel-collector:4317")
+                .setEndpoint("http://localhost:4317")
                 .build();
 
         SdkTracerProvider tracerProvider = SdkTracerProvider.builder()
