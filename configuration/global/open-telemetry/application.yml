@@ -1,16 +1,21 @@
 spring:
-    opentelemetry:
-      traces:
-        exporter:
-          otlp:
-            endpoint: http://localhost:4317
-        sampler:
-          probability: 1.0
+  opentelemetry:
+    traces:
+      exporter:
+        otlp:
+          endpoint: http://localhost:4317
+      sampler:
+        probability: 1.0
+  metrics:
+    export:
+      otlp:
+        enabled: true
+        endpoint: http://localhost:4317
 management:
   endpoints:
     web:
       exposure:
-        include: health,info,prometheus
+        include: health,info,metrics,prometheus
   endpoint:
     prometheus:
       enabled: true
