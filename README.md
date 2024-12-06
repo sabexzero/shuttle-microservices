@@ -1,4 +1,6 @@
-# Shuttle🎇
+# Shuttle🎇 Abandoned for lack of interest
+
+## Despite the fact that the project was abandoned even before the start of productive development, you can pick up something good in this project for yourself
 
 The **Shuttle** project is a set of microservices mostly based on Spring Boot for controlling a space taxi. 
 Within the framework of this project, various functionality has been implemented for working with space flights and interaction between microservices.
